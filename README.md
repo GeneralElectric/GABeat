@@ -1,8 +1,7 @@
 # Gabeat
 
-Welcome to Gabeat.  This is a little process that implements the [Elastic Beat]
-(https://www.elastic.co/products/beats)
-interface and gets one data point from the [Google Analytics Real Time Data API] (https://developers.google.com/analytics/devguides/reporting/realtime/v3/)
+Welcome to Gabeat.  This is a little process that implements the [Elastic Beat](https://www.elastic.co/products/beats)
+interface and gets one data point from the [Google Analytics Real Time Data API](https://developers.google.com/analytics/devguides/reporting/realtime/v3/)
 and sends that data to Elastic so that a user can graph events in Elastic against
 the data point from Google Analytics (GA).  For example, if you have a dashboard
 in Elastic that shows metrics on the errors in your application's logs, you might
@@ -14,7 +13,7 @@ Prerequisites:
   1. Follow the instructions in [Getting Ready](https://www.elastic.co/guide/en/beats/libbeat/current/newbeat-getting-ready.html) in the Beats documentation.
   1. Install the non-Go dependences mentioned in [Fetching Dependencies and Setting up the Beat](https://www.elastic.co/guide/en/beats/libbeat/current/setting-up-beat.html).  Note that we skipped the "Generating Your Beat" step in the Elastic documentation.  That's because the GABeat structure has already been generated.
   1. Clone this project into the following location: `${GOPATH}/src/GABeat`
-  1. Get a GA JWT token (these are the credentials to use the GA APIs) and modify `_meta/beat.yml` google_credentials_file config value to point to it.  The (GA docs)[https://developers.google.com/accounts/docs/OAuth2ServiceAccount] explain how to get a token.
+  1. Get a GA JWT token (these are the credentials to use the GA APIs) and modify `_meta/beat.yml` google_credentials_file config value to point to it.  The [GA docs](https://developers.google.com/accounts/docs/OAuth2ServiceAccount) explain how to get a token.
   1. Modify the ga_ids, ga_metrics, and ga_dimensions fields of `_meta/beat.yml` to reference your GA account view ID and the data point you want to collect.  To find your account view ID:
     1. Log into [GA](https://analytics.google.com) with your usual credentials.
     1. Click on the account name in the upper left-hand corner of the home page.
