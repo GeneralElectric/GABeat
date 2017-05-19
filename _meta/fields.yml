@@ -1,0 +1,18 @@
+- key: gabeat
+  title: gabeat
+  description: A beat for adding Google Analytics data to Elastic
+  fields:
+    - name: type
+      required: true
+      description: >
+        The name of the log event. Always gabeat for this beat type.
+    - name: count
+      type: long
+      description: >
+        The number of transactions that this event represents. This
+        is generally the inverse of the sampling rate. For example, for
+        a sample rate of 1/10, the count is 10. The count is used by the
+        UIs to return estimated values. Reserved for future usage.
+      required: true
+# Note: you will probably want to add the name of your GA datapoint here.
+# I haven't included one since it is custom to your GA data.

@@ -1,0 +1,11 @@
+gabeat:
+  # Defines how often an event is sent to the output
+  period: 30m
+
+gabeat.googleanalytics:
+    # https://developers.google.com/accounts/docs/OAuth2ServiceAccount
+    # Explains OAuth2 Service Account flow and how code works
+    google_credentials_file: /path/to/your/ga/token.json
+    ga_ids: "ga:123456789"
+    ga_metrics: "rt:pageviews"
+    ga_dimensions: "rt:pageTitle"

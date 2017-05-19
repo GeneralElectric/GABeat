@@ -1,0 +1,5 @@
+= Gabeat Docs
+
+Welcome to the Gabeat documentation.
+
+

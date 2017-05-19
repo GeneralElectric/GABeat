@@ -1,0 +1,16 @@
+gabeat:
+  # Defines how often an event is sent to the output
+  period: 5s
+
+gabeat.googleanalytics:
+    # Documentation for the Google Analytics Realtime API:
+    # https://developers.google.com/analytics/devguides/reporting/realtime/v3/
+    # Documentation explaining OAuth2 Service Account flow and how code works
+    # https://developers.google.com/accounts/docs/OAuth2ServiceAccount
+    google_credentials_file: /path/to/your/jwt/token/file
+    # replace ga_ids with your metric ID from GA
+    ga_ids: "ga:123456789"
+    # Docs on available metrics and dimensions can be found here:
+    # https://developers.google.com/analytics/devguides/reporting/realtime/dimsmets/
+    ga_metrics: "rt:pageviews"
+    ga_dimensions: "rt:pageTitle"

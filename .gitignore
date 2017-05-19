@@ -1,0 +1,29 @@
+/.idea
+/build
+
+/vendor
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
+.glide/
+/vendor/
+.DS_Store
+/gabeat
+/gabeat.test
+*.pyc
+
+#google credentials files don't go in git
+GABeat-GEDigital-19def549fb65.json
+GABeat-GEDigital-8c36234a812d.json
+gabeat.yml.local
+
