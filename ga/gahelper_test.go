@@ -3,7 +3,7 @@ package ga
 // This file is mandatory as otherwise the gabeat.test binary is not generated correctly.
 
 import (
-	cfg "GABeat/config"
+	cfg "github.com/GeneralElectric/GABeat/config"
 	"errors"
 	"github.com/stretchr/testify/assert"
 	analytics "google.golang.org/api/analytics/v3"

@@ -9,8 +9,8 @@ import (
 	"github.com/elastic/beats/libbeat/logp"
 	"github.com/elastic/beats/libbeat/publisher"
 
-	"GABeat/config"
-	"GABeat/ga"
+	"github.com/GeneralElectric/GABeat/config"
+	"github.com/GeneralElectric/GABeat/ga"
 )
 
 var debugf = logp.MakeDebug("gabeat")
